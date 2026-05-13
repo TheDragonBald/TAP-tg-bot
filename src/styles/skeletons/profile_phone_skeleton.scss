@@ -1,0 +1,82 @@
+@import "../components/vars";
+@import "../components/general";
+@import "../components/mixins";
+
+.wrapper-skeleton-profile {
+    @include WidthHeight(100vw, 100vh);
+    @include displayFlex(column, center, flex-end);
+    background: $skeletonBgColor;
+}
+
+.skeleton-profile-container {
+    @include WidthHeight(100vw, 89vh);
+    @include displayFlex(column, center, space-between);
+}
+
+main {
+    @include WidthHeight(97vw, 80vh);
+    @include displayFlex(column, center, space-between);
+
+    header {
+        @include WidthHeight(95%, 36vh);
+        @include displayFlex(column, center, space-between);
+
+        .avatar {
+            @include WidthHeight(110px, 110px);
+            @include displayFlex(column, center, center);
+            background: $skeletonContainerColor;
+            border-radius: 50%;
+            border: black 1px solid;
+        }
+
+        .name {
+            @include WidthHeight(75%, 7%);
+            background: $skeletonFillColor;
+            border-radius: 10px;
+        }
+
+        .banner {
+            @include WidthHeight(100%, 35%);
+            background: $skeletonFillColor;
+            border-radius: 20px;
+        }
+    }
+
+    .buttons {
+        @include WidthHeight(95%, 40vh);
+        @include displayFlex(column, center, space-between);
+
+        .few-buttons {
+            @include WidthHeight(100%, 35%);
+            background: $skeletonContainerColor;
+            border-radius: 12px;
+
+            .container-button {
+                @include WidthHeight(100%, 7vh);
+                background: $skeletonContainerColor;
+                border-radius: 12px;
+            }
+        }
+
+        .container-button {
+            @include displayFlex(row, center, space-around);
+            @include WidthHeight(100%, 7vh);
+            background: $skeletonContainerColor;
+            border-radius: 12px;
+
+            .icon-container {
+                @include WidthHeight(34px, 34px);
+                background: $skeletonFillColor;
+                border-radius: 6px;
+                margin-left: 10px;
+            }
+
+            .button-name {
+                @include WidthHeight(65%, 25%);
+                background: $skeletonFillColor;
+                border-radius: 8px;
+                margin-right: 30px;
+            }
+        }
+    }
+}

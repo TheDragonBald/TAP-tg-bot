@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+span {
+  color: white;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.wrapper-platforms {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: #1E1E1E;
+}
+.wrapper-platforms h1 {
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.platforms-container {
+  width: 100vw;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  width: 97vw;
+  height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-upper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .header-upper .search-form {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .header-upper input[type=text] {
+  width: 300px; /* Ширина поля ввода */
+  padding: 10px; /* Паддинг для красоты */
+  font-size: 16px; /* Размер шрифта */
+  text-align: left; /* Текст пользователя слева */
+  position: relative; /* Позиционирование для псевдоэлемента */
+}
+header .header-upper input[type=text]::-moz-placeholder {
+  text-align: center; /* Центрируем текст-заполнитель */
+  opacity: 0.7; /* Немного уменьшаем непрозрачность */
+}
+header .header-upper input[type=text]::placeholder {
+  text-align: center; /* Центрируем текст-заполнитель */
+  opacity: 0.7; /* Немного уменьшаем непрозрачность */
+}
+header .header-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}/*# sourceMappingURL=platforms_phone.css.map */

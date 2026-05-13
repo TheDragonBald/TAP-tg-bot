@@ -1,0 +1,32 @@
+// Базовый размер шрифта  
+$base-font-size: 16px;
+
+// Цвета
+// чаще всего бекграунды:
+// $bgColor: themeParams.bottomBarBgColor();
+// $buttonColor: themeParams.BgColor();
+// // чаще всего текст:
+// $accentColor: themeParams.accentTextColor();
+// $textColor: themeParams.ButtonTextColor();
+// // черточки и выделение:
+// $subtitleColor: themeParams.subtitleTextColor();
+// $destructiveColor: themeParams.DestructiveTextColor();
+
+
+$bgColor: #1E1E1E;
+$secondaryBgColor: rgba(#000000, 0.4); //40% прозрачности
+$headerBgColor: #252425;
+
+$accentColor: #AF90DF;
+$textColor: #FFFFFF;
+$subtitleColor: #7F7E7F;
+
+$sectionBgColor: #191819;
+$sectionSeparatorBgColor: rgba(#000000, 0.4); //40% прозрачности
+
+$buttonColor: #A583DA;
+$destructiveColor: #EE686F;
+
+$skeletonBgColor: $bgColor;
+$skeletonContainerColor: $sectionBgColor;
+$skeletonFillColor: $subtitleColor;

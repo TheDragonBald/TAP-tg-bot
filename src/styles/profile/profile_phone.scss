@@ -1,0 +1,319 @@
+@import "../components/vars";
+@import "../components/general";
+@import "../components/mixins";
+
+.wrapper-profile {
+    @include WidthHeight(100vw, 100vh);
+    @include displayFlex(column, center, flex-end);
+    background: $bgColor;
+
+    h1 {
+        text-align: center;
+        font-size: px-to-rem(18px);
+        margin-bottom: 35px;
+        color: white;
+    }
+}
+
+.profile-container {
+    @include WidthHeight(100vw, 89vh);
+    @include displayFlex(column, center, space-between);
+}
+
+main {
+    @include WidthHeight(97vw, 74vh);
+    @include displayFlex(column, center, space-between);
+}
+
+header {
+    @include WidthHeight(100%, 42vh);
+    @include displayFlex(column, center, space-between);
+
+    .header-upper {
+        @include WidthHeight(100%, 50%);
+        @include displayFlex(column, center, space-between);
+
+        .box-img {
+            @include WidthHeight(100px, 100px);
+            @include displayFlex(column, center, center);
+            margin-bottom: 10px;;
+
+            img {
+                @include WidthHeight(100%, 100%);
+                border-radius: 50%;
+            }
+        }
+
+        .user-name {
+            @include WidthHeight(70%, 22%);
+            border-bottom: 2px solid rgba(175, 144, 223, 0.4);
+            padding-bottom: 5px;
+            text-align: center;
+
+            span {
+                font-size: px-to-rem(20px);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .header-banner-container {
+        @include WidthHeight(100%, 55%);
+        @include displayFlex(column, center, space-between);
+        text-align: center;
+
+        .header-banner {
+            @include WidthHeight(95%, 65%);
+            @include displayFlex(row, center, space-between);
+            margin: auto;
+            border-radius: 20px;
+            background: linear-gradient(to right, #382B51, #B19AF6);
+
+            .banner-text {
+                @include WidthHeight(70%, 80%);
+                @include displayFlex(column, center, center);
+                border: 2px solid rgba(175, 144, 223, 1);
+                border-radius: 12px;
+            }
+
+            .utya-container {
+                @include WidthHeight(25%, 100%);
+                @include displayFlex(column, center, center);
+                border-left: 2px solid rgba(15, 15, 15, 0.1);
+
+                .box-img {
+                    @include WidthHeight(80px, 80px);
+
+                    img {
+                        @include WidthHeight(100%, 100%);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-buttons {
+    @include WidthHeight(95%, 44vh);
+    @include displayFlex(column, center, space-between);
+    margin: 0 auto;
+
+    .few-buttons {
+        @include WidthHeight(100%, 30%);
+        background: $sectionBgColor;
+        border-radius: 12px;
+
+        .button-container {
+            @include WidthHeight(100%, 6.5vh);
+            @include displayFlex(row, center, space-between);
+            background: $sectionBgColor;
+            border-radius: 12px;
+    
+            .icon-container {
+                @include WidthHeight(50px, 100%);
+                @include displayFlex(column, center, center);
+                margin-left: 5px;
+                margin-right: 10px;
+    
+                .box-img {
+                    @include WidthHeight(34px, 34px);
+                    border-radius: 6px;
+                    @include displayFlex(column, center, center);
+                }
+            }
+
+            span {
+                font-size: px-to-rem(18px);
+                font-weight: 500;
+                flex: 1;
+                text-align: left;
+            }
+        }
+
+        hr {
+            @include WidthHeight(85%, 100%);
+            justify-self: flex-end;
+            height: 1px;
+            border: none;
+            background: $sectionSeparatorBgColor;
+        }
+    }
+
+    .button-container {
+        @include WidthHeight(100%, 6.5vh);
+        @include displayFlex(row, center, space-between);
+        background: $sectionBgColor;
+        border-radius: 12px;
+
+        .icon-container {
+            @include WidthHeight(50px, 100%);
+            @include displayFlex(column, center, center);
+            margin-left: 5px;
+            margin-right: 10px;
+
+            .box-img {
+                @include WidthHeight(34px, 34px);
+                border-radius: 6px;
+                @include displayFlex(column, center, center);
+            }
+        }
+
+        span {
+            font-size: px-to-rem(18px);
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .arrow-container {
+            margin-right: 15px;
+            @include displayFlex(column, center, center);
+        }
+    }
+
+    #support-button {
+        background: #0083EE;
+    }
+
+    #notifications-button {
+        background: #DAA520;
+    }
+    
+    #operations-button {
+        padding-right: 1px;
+        background: #29A35C;
+    }
+
+    #documents-button {
+        background: #828282;
+    }
+
+    #our-site-button {
+        background: #E91E63;
+    }
+}
+
+.nav-container {
+    @include WidthHeight(100vw, 15vh);
+    @include displayFlex(column, center, flex-end);
+
+    nav {
+        @include WidthHeight(100%, 71%);
+        @include displayFlex(row, flex-start, center);
+        border-radius: 25px;
+        background: $sectionBgColor;
+
+        .buttons-container {
+            @include WidthHeight(75%, 65%);
+            @include displayFlex(row, center, space-between);
+
+            button {
+                @include WidthHeight(29%, 66%);
+                @include displayFlex(column, center, space-between);
+                background: $sectionBgColor;
+
+                .icon-container {
+                    @include WidthHeight(25px, 25px);
+
+                    svg {
+                        @include WidthHeight(100%, 100%);
+                        fill: white;
+
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: px-to-rem(14px);
+                    font-weight: 500;
+                }
+            }
+
+            button:hover {
+                .icon-container {
+                    svg {
+                        fill: blue;
+                        
+                        path {
+                            fill: blue;
+                        }
+                    }
+                }
+
+                span {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+// медиазапросы
+
+@media (min-width: 320px) and (max-width: 340px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    svg {
+        @include WidthHeight(75%, 75%);
+    }
+
+    header {
+        .header-banner-container {
+            .header-banner {
+                .utya-container {
+                    .box-img {
+                        @include WidthHeight(70px, 70px);
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-buttons {
+        .few-buttons {
+            .button-container {
+                .icon-container {
+                    .box-img {
+                        @include WidthHeight(32px, 32px);
+                    }
+                }
+            }
+        }
+
+        .button-container {
+            .icon-container {
+                .box-img {
+                    @include WidthHeight(32px, 32px);
+                }
+            }
+        }
+    }
+
+    .nav-container {
+        nav {
+            .buttons-container {
+                button {
+                    .icon-container {
+                        @include WidthHeight(22px, 22px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 376px) {
+    header {
+        .header-upper {
+            .box-img {
+                @include WidthHeight(110px, 110px);
+                @include displayFlex(column, center, center)
+            }
+        }
+    }
+}

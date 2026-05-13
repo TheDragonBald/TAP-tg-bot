@@ -1,0 +1,60 @@
+@import "../components/vars";
+@import "../components/general";
+@import "../components/mixins";
+
+.wrapper-platforms {
+    @include WidthHeight(100vw, 100vh);
+    @include displayFlex(column, center, flex-end);
+    background: $bgColor;
+
+    h1 {
+        text-align: center;
+        font-size: px-to-rem(18px);
+        margin-bottom: 35px;
+        color: white;
+    }
+}
+
+.platforms-container {
+    @include WidthHeight(100vw, 89vh);
+    @include displayFlex(column, center, space-between);
+}
+
+main {
+    @include WidthHeight(97vw, 74vh);
+    @include displayFlex(column, center, space-between);
+}
+
+header {
+    @include WidthHeight(100%, 23vh);
+    @include displayFlex(column, center, space-between);
+
+    .header-upper {
+        @include WidthHeight(100%, 50%);
+        @include displayFlex(column, center, flex-start);
+
+        .search-form {  
+            display: flex;  
+            justify-content: center;
+            background-color: $secondaryBgColor;
+        }  
+
+        input[type="text"] {  
+            width: 300px; /* Ширина поля ввода */  
+            padding: 10px; /* Паддинг для красоты */  
+            font-size: 16px; /* Размер шрифта */  
+            text-align: left; /* Текст пользователя слева */  
+            position: relative; /* Позиционирование для псевдоэлемента */  
+        }  
+
+        input[type="text"]::placeholder {  
+            text-align: center; /* Центрируем текст-заполнитель */  
+            opacity: 0.7; /* Немного уменьшаем непрозрачность */  
+        }  
+    }
+
+    .header-bottom {
+        @include WidthHeight(100%, 50%);
+        @include displayFlex(column, center, flex-end);
+    }
+}

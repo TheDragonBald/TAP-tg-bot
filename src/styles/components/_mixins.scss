@@ -1,0 +1,18 @@
+// Функция для преобразования px в rem  
+@function px-to-rem($px) {  
+    @return calc($px / $base-font-size) * 1rem; // Преобразуем пиксели в rem  
+}  
+
+// Удобный дисплей флекс
+@mixin displayFlex($flexDirection, $alignItems, $justifyContent) {
+    display: flex;
+    flex-direction: $flexDirection;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+// Ширина, высота
+@mixin WidthHeight($width, $height) {
+    width: $width;
+    height: $height;
+}
